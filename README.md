@@ -54,25 +54,24 @@ A simple and interactive Java Swing application that displays weather reports ba
 
 ```
 City: Hyderabad
-
 Weather Report:
 Temperature: 30°C
 Humidity: 50%
 Condition: Sunny
-City: Delhi
 
+City: Delhi
 Weather Report:
 Temperature: 35°C
 Humidity: 45%
 Condition: Sunny
-City: Chennai
 
+City: Chennai
 Weather Report:
 Temperature: 34°C
 Humidity: 70%
 Condition: Humid
-City: Bangalore
 
+City: Bangalore
 Weather Report:
 Temperature: 28°C
 Humidity: 60%
