@@ -1,6 +1,4 @@
 
-DEVELOPING A GUI APPLICATION THAT SHOWS WEATHER REPORTS AND HANDLES USER INTERACTION THROUGH EVENTS
-SOURCE CODE:
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
