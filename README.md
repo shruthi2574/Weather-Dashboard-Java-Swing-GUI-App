@@ -85,7 +85,7 @@ Condition: Cloudy
 ## 📂 Project Structure
 
 ```
-weatherdashboard–java /
+weather-dashboard–java /
 ├── WeatherDashboard.java
 └── README.md
 ```
