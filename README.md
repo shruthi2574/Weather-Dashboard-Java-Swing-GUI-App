@@ -50,3 +50,52 @@ A simple and interactive Java Swing application that displays weather reports ba
 3. Compile and run WeatherDashboard.java
    
 
+## 💡 Example Output
+
+```
+City: Hyderabad
+
+Weather Report:
+Temperature: 30°C
+Humidity: 50%
+Condition: Sunny
+City: Delhi
+
+Weather Report:
+Temperature: 35°C
+Humidity: 45%
+Condition: Sunny
+City: Chennai
+
+Weather Report:
+Temperature: 34°C
+Humidity: 70%
+Condition: Humid
+City: Bangalore
+
+Weather Report:
+Temperature: 28°C
+Humidity: 60%
+Condition: Cloudy
+
+
+```
+
+---
+
+## 📂 Project Structure
+
+```
+weatherdashboard–java /
+├── WeatherDashboard.java
+└── README.md
+```
+
+---
+
+## 🙋‍♀️ Author
+
+Gugulothu Shruthi  
+B.Tech,CSE—Narayanamma Institute of Technology  
+✉️ [gugulothushruthi@gmail.com](mailto:gugulothushruthi@gmail.com)
+
