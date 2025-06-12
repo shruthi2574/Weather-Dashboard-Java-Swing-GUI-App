@@ -1,0 +1,61 @@
+
+DEVELOPING A GUI APPLICATION THAT SHOWS WEATHER REPORTS AND HANDLES USER INTERACTION THROUGH EVENTS
+SOURCE CODE:
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class WeatherDashboard extends JFrame implements ActionListener {
+    JComboBox<String> cityDropdown;
+    JTextArea weatherInfo;
+
+    public WeatherDashboard() {
+        setTitle("Weather Dashboard");
+        setSize(400, 300);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLayout(new FlowLayout());
+
+        JLabel label = new JLabel("Select a City:");
+        add(label);
+
+        String[] cities = {"Mumbai", "Delhi", "Bangalore", "Chennai", "Hyderabad"};
+        cityDropdown = new JComboBox<>(cities);
+        cityDropdown.addActionListener(this);
+        add(cityDropdown);
+
+        weatherInfo = new JTextArea(8, 30);
+        weatherInfo.setEditable(false);
+        add(new JScrollPane(weatherInfo));
+
+        setVisible(true);
+    }
+
+    public void actionPerformed(ActionEvent e) {
+        String selectedCity = (String) cityDropdown.getSelectedItem();
+        String report = getWeather(selectedCity);
+        weatherInfo.setText(report);
+    }
+
+    public String getWeather(String city) {
+        // Dummy weather data (normally, you would call an API here)
+        switch (city) {
+            case "Mumbai":
+                return "Weather in Mumbai:\nTemperature: 32°C\nHumidity: 60%\nConditions: Clear";
+            case "Delhi":
+                return "Weather in Delhi:\nTemperature: 35°C\nHumidity: 45%\nConditions: Sunny";
+            case "Bangalore":
+                return "Weather in Bangalore:\nTemperature: 28°C\nHumidity: 70%\nConditions: Cloudy";
+            case "Chennai":
+                return "Weather in Chennai:\nTemperature: 34°C\nHumidity: 65%\nConditions: Humid";
+            case "Hyderabad":
+                return "Weather in Hyderabad:\nTemperature: 31°C\nHumidity: 55%\nConditions: Partly Cloudy";
+            default:
+                return "Weather data not available.";
+        }
+    }
+
+    public static void main(String[] args) {
+        new WeatherDashboard();
+    }
+}
+
